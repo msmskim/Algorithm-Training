@@ -1,4 +1,4 @@
-# 초기 값 지정
+# 문제 1
 total = 0
 
 for i in range(1, 1000):
@@ -10,6 +10,14 @@ print(total)
 
 # 한줄로 풀기
 sum([x for x in range(1, 1000) if x % 3 == 0 or x % 5 == 0 ])
+
+# 문제2
+a = 24
+b = {(x + 1) for x in range(a) if a % (x + 1) == 0}
+print(b)
+c = len(b)
+
+print("약수의 개수는 {0} 개입니다".format(c))
 
 느낀점
 1. 참 많은 문제를 쉽게 해결할 수 있다.
